@@ -11,7 +11,7 @@
         <scene sceneID="Qa3-X3-GIk">
             <objects>
                 <navigationController id="nFR-uY-ApT" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="KLa-VP-5zb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="KLa-VP-5zb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -31,17 +31,17 @@
         <scene sceneID="6ZM-eP-pxQ">
             <objects>
                 <viewController id="gda-tk-Yh6" customClass="HomeViewController" customModule="HikeTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4fz-x9-oid">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fz-x9-oid">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" id="TF5-Wu-j2k">
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="TF5-Wu-j2k">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" id="2J7-VE-2q7">
-                                <rect key="frame" x="72" y="433" width="230" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2J7-VE-2q7">
+                                <rect key="frame" x="72" y="407" width="230" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41176470588235292" green="0.51764705882352935" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
                                 <state key="normal" title="New Hike">
@@ -51,9 +51,9 @@
                                     <segue destination="LG7-tS-HfP" kind="show" id="8Bi-9k-5uu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" id="QCS-lA-NAu">
-                                <rect key="frame" x="72" y="521" width="230" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCS-lA-NAu">
+                                <rect key="frame" x="72" y="503" width="230" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41176470588235292" green="0.51764705882352935" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
                                 <state key="normal" title="Past Hikes">
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5mH-a3-vvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-428" y="23.838080959520241"/>
+            <point key="canvasLocation" x="-431.19999999999999" y="22.03898050974513"/>
         </scene>
         <!--Past Hikes-->
         <scene sceneID="I4K-dF-vdI">
@@ -280,13 +280,12 @@
         <scene sceneID="FRd-US-yPE">
             <objects>
                 <viewController id="LG7-tS-HfP" customClass="HikeViewController" customModule="HikeTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nVh-8G-JGm">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVh-8G-JGm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-gS-HGI">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-gS-HGI">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="AD1-ie-sUE"/>
                                     <barButtonItem title="Start" springLoaded="YES" id="78L-DX-zF2">
@@ -312,49 +311,51 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="47d-45-3an"/>
                                 </items>
                             </toolbar>
-                            <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWb-k0-VNQ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="72"/>
+                            <view opaque="NO" contentMode="scaleToFill" id="vWb-k0-VNQ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Altitude:                     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNB-Bb-nj3" userLabel="Altitude Label">
-                                        <rect key="frame" x="189" y="40" width="186" height="35"/>
+                                        <rect key="frame" x="189" y="38" width="180" height="19"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18.5"/>
                                         <color key="textColor" red="0.41176470588235292" green="0.51764705882352935" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance:                      " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0n-T7-8Ba">
-                                        <rect key="frame" x="189" y="20" width="186" height="26"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <rect key="frame" x="189" y="18" width="180" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18.5"/>
                                         <color key="textColor" red="0.41176470588235292" green="0.51764705882352935" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pace:                                   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-2J-mnD">
-                                        <rect key="frame" x="21" y="40" width="165" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <rect key="frame" x="8" y="38" width="171" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18.5"/>
                                         <color key="textColor" red="0.41176470588235292" green="0.51764705882352935" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:                      " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYa-OS-xyK">
-                                        <rect key="frame" x="21" y="20" width="165" height="26"/>
+                                        <rect key="frame" x="8" y="18" width="171" height="19"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18.5"/>
                                         <color key="textColor" red="0.41176470588235292" green="0.51764705882352935" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsCompass="NO" id="hjv-Hd-Adf">
-                                <rect key="frame" x="0.0" y="116" width="375" height="507"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjv-Hd-Adf">
+                                <rect key="frame" x="0.0" y="106" width="375" height="516"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xLx-EM-W9O">
-                                <rect key="frame" x="74" y="574" width="227" height="32"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xLx-EM-W9O">
+                                <rect key="frame" x="74" y="573" width="230" height="33"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="MOQ-tK-rK3"/>
+                                    <constraint firstAttribute="width" constant="230" id="dVg-d6-oOX"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Standard"/>
                                     <segment title="Satellite"/>
@@ -365,9 +366,12 @@
                                     <action selector="indexChanged:" destination="LG7-tS-HfP" eventType="valueChanged" id="xw5-4T-WzX"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7su-oE-sFr">
-                                <rect key="frame" x="301" y="139" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7su-oE-sFr">
+                                <rect key="frame" x="315" y="126" width="44" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8rL-fk-geM"/>
+                                    <constraint firstAttribute="width" constant="44" id="q5b-YC-RbS"/>
+                                </constraints>
                                 <state key="normal" image="Compass"/>
                                 <connections>
                                     <action selector="compassButton:" destination="LG7-tS-HfP" eventType="touchUpInside" id="haq-mv-J5F"/>
@@ -375,12 +379,27 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dz9-cd-FCp" firstAttribute="trailing" secondItem="xLx-EM-W9O" secondAttribute="trailing" constant="74" id="63Y-W9-UJ4"/>
+                            <constraint firstItem="vWb-k0-VNQ" firstAttribute="top" secondItem="dz9-cd-FCp" secondAttribute="top" id="6iS-2r-jue"/>
+                            <constraint firstItem="dz9-cd-FCp" firstAttribute="bottom" secondItem="hjv-Hd-Adf" secondAttribute="bottom" constant="45" id="AFg-7f-ThQ"/>
+                            <constraint firstItem="xLx-EM-W9O" firstAttribute="leading" secondItem="dz9-cd-FCp" secondAttribute="leading" constant="74" id="BTZ-HF-Wcf"/>
+                            <constraint firstItem="Ucl-gS-HGI" firstAttribute="top" secondItem="xLx-EM-W9O" secondAttribute="bottom" constant="17" id="HDX-jL-QSy"/>
+                            <constraint firstItem="hjv-Hd-Adf" firstAttribute="trailing" secondItem="dz9-cd-FCp" secondAttribute="trailing" id="K0E-k0-pNi"/>
+                            <constraint firstItem="hjv-Hd-Adf" firstAttribute="leading" secondItem="dz9-cd-FCp" secondAttribute="leading" id="Mrh-He-M4m"/>
+                            <constraint firstItem="Ucl-gS-HGI" firstAttribute="leading" secondItem="dz9-cd-FCp" secondAttribute="leading" id="Szj-yx-g9m"/>
+                            <constraint firstItem="dz9-cd-FCp" firstAttribute="trailing" secondItem="7su-oE-sFr" secondAttribute="trailing" constant="16" id="Wiv-x9-nlP"/>
+                            <constraint firstItem="Ucl-gS-HGI" firstAttribute="bottom" secondItem="dz9-cd-FCp" secondAttribute="bottom" id="WyC-ee-vl7"/>
+                            <constraint firstItem="vWb-k0-VNQ" firstAttribute="leading" secondItem="dz9-cd-FCp" secondAttribute="leading" id="lWB-7G-aRW"/>
+                            <constraint firstItem="hjv-Hd-Adf" firstAttribute="top" secondItem="vWb-k0-VNQ" secondAttribute="bottom" id="rOs-Yi-VzS"/>
+                            <constraint firstItem="Ucl-gS-HGI" firstAttribute="trailing" secondItem="dz9-cd-FCp" secondAttribute="trailing" id="uOo-iy-WBb"/>
+                            <constraint firstItem="7su-oE-sFr" firstAttribute="top" secondItem="vWb-k0-VNQ" secondAttribute="bottom" constant="20" id="yfT-fX-lbB"/>
+                            <constraint firstItem="vWb-k0-VNQ" firstAttribute="trailing" secondItem="dz9-cd-FCp" secondAttribute="trailing" id="yhS-ts-EqJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dz9-cd-FCp"/>
                     </view>
                     <navigationItem key="navigationItem" title="HikeTracker" id="yLS-GK-nch">
-                        <barButtonItem key="rightBarButtonItem" springLoaded="YES" systemItem="camera" id="2gL-at-yQW">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" springLoaded="YES" systemItem="camera" id="2gL-at-yQW"/>
                     </navigationItem>
                     <connections>
                         <outlet property="altitudeLabel" destination="SNB-Bb-nj3" id="MHS-eY-Crz"/>
@@ -427,7 +446,7 @@
                                 </connections>
                             </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsCompass="NO" id="jcP-fp-mPo">
-                                <rect key="frame" x="30" y="278" width="318" height="265"/>
+                                <rect key="frame" x="30" y="278" width="318" height="272"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                             <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLO-2a-WLu">
@@ -459,70 +478,70 @@
                                         <rect key="frame" x="8" y="9" width="127" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance Travelled:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZd-CN-nUR">
                                         <rect key="frame" x="8" y="39" width="174" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average Pace:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOU-dp-UF6">
                                         <rect key="frame" x="8" y="69" width="120" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Altitude Gain:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4H-x6-fq8">
                                         <rect key="frame" x="8" y="99" width="178" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCh-DO-tr0">
                                         <rect key="frame" x="200" y="39" width="110" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N/A" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANM-cv-83Z">
                                         <rect key="frame" x="200" y="69" width="110" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM6-ja-OFM" userLabel="Net Elevation Gain">
                                         <rect key="frame" x="200" y="99" width="110" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N/A              " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hw-lL-FiO">
                                         <rect key="frame" x="200" y="9" width="110" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Altitude Loss:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pow-As-imj">
                                         <rect key="frame" x="8" y="139" width="179" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N/A               " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us8-bn-lp8">
                                         <rect key="frame" x="200" y="138" width="108" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.89803921568627454" green="0.89411764705882346" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
