@@ -153,10 +153,10 @@ class HikeViewController: UIViewController {
         locationManager.stopUpdatingLocation()
     }
     
-    
     @IBAction func compassButton(_ sender: Any) {
         mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
     }
+    
 
     @IBAction func indexChanged(_ sender: Any) {
         switch mapTypeControl.selectedSegmentIndex
